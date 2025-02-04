@@ -1,0 +1,177 @@
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+.circulo{
+    position: absolute;
+    margin-top: -50px;
+    width: 70px;
+    height: 70px;
+    background-color: #563377;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 180px;
+}
+
+.contents{
+    margin-top: 40px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    color: #563377;
+}
+
+.links_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #EAE4F2;
+    border-radius: 10px;
+    width: 15%;
+    text-align: center;
+    padding: 30px;
+    height: 300px;
+
+}
+
+.links_cards h1{
+    font-size: 20px;
+    margin-top: 70px;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.links_cards p{
+    margin-top: 0;
+    padding: 25px;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-weight: 500;
+}
+
+.links_cards button{
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    margin-top: 300px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    background-color: #563377;
+    width: 150px;
+    height: 40px;
+    border-radius: 80px;
+    font-size: 15px;
+}
+.links_cards:hover{
+ scale: 1.1;
+ transition: 0.5s;
+ box-shadow: 10px 0px 10px #e3d2f07c;
+}
+
+.links_cards button:hover, .voluntario:hover {
+    transition: .5s;
+    background-color: #9e83b47c;
+    color: #563377;
+}
+
+/* Ajude com sua doação */
+
+.ajude{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ajude h1{
+    margin-top: 50px;
+    font-size: 40px;
+    text-align: center;
+    color: #563377;
+}
+
+.ajude p{
+    width: 400px;
+    text-align: center;
+}
+
+.contGC {
+    margin-top: 80px;
+    margin-bottom: 110px;
+    display: flex;
+    justify-content: center;
+    background: #886DA4;
+    height: 100px;
+    align-items: end;
+    width: 100%;
+}
+
+.gatoecachorro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.gatoecachorro img{
+    width: 300px;
+}
+
+/* Seja voluntário */
+
+.seja_voluntario{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.card_voluntario{
+    padding: 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EAE4F2;
+    margin-bottom: 60px;
+    border-radius: 30px;
+    box-shadow: 10px 0px 10px #e3d2f07c;
+}
+.tit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tit img{
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;
+}
+.tit h1{
+    font-size: 40px;
+    color: #563377;
+}
+
+.card_voluntario p{
+    width: 400px;
+    color: #623C83;
+    text-align: center;
+}
+.card_voluntario h2{
+    color: #563377;
+}
+.voluntario{
+    cursor: pointer;
+    background-color: #563377;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.voluntario p{
+    color: white;
+    margin: 10px;
+}
+
+
+.voluntario:hover p{
+    color: #563377;
+}

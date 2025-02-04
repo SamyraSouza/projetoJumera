@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+}
+
+header {
+    height: 600px;
+    position: relative;
+}
+
+/* class pra cor de fundo */
+.bck-color {
+    height: 600px;
+    background-color: rgba(112, 80, 131, 0.5);
+}
+
+.cont-ini {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 650px;
+    font-family: "Montserrat", sans-serif;
+
+    & figure {
+        margin: 20px 0 0 0;
+    }
+
+    & ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        & li {
+            margin-inline-end: 70px;
+            font-size: larger;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        & .doe-agora {
+            background-color: #5B337A;
+            border: solid 2px #5B337A;
+            padding: 13px;
+            width: 130px;
+            border-radius: 15px;
+            font-family: 'montserrat', sans-serif;
+            font-size: large;
+            font-weight: 400;
+            transition: 100ms;
+
+            & a {
+                text-decoration: none;
+                color: #E6CDF5;
+            }
+        }
+
+        & .doe-agora:hover {
+            background-color: #9E83B4;
+            color: #fff;
+            padding: 13px;
+            border: solid 2px #886DA4;
+            cursor: pointer;
+        }
+    }
+}
+
+#click-nav_pag {
+    color: #fff;
+    font-family: 'montserrat', sans-serif;
+    font-size: large;
+    position: absolute;
+    right: 600px;
+
+    display: none;
+
+    & ul {
+        list-style: none;
+        background-color: #5B337A;
+        width: 170px;
+        border-radius: 20px;
+        padding: 10px 20px 20px 20px;
+        margin: 0;
+
+        & .links {
+            padding: 10px 0 0 10px;
+            cursor: pointer;
+
+            & a {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+}
+
+#click-nav_adote {
+    color: #fff;
+    font-family: 'montserrat', sans-serif;
+    font-size: large;
+    position: absolute;
+    right: 370px;
+
+    display: none;
+
+    & ul {
+        list-style: none;
+        background-color: #5B337A;
+        width: 120px;
+        border-radius: 20px;
+        padding: 10px 20px 20px 20px;
+        margin: 0;
+
+        & li {
+            padding: 10px 0 0 10px;
+            cursor: pointer;
+
+            & a {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #563377;
+    color: #fff;
+    font-family: 'montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .conteiner {
+        display: flex;
+        width: 1440px;
+        border-bottom: 2px solid #fff;
+        margin: 20px 0;
+        justify-content: space-between;
+
+        & .cont1 {
+            width: 550px;
+
+            & .redes {
+                display: flex;
+                align-items: center;
+                border-bottom: 2px solid #fff;
+                gap: 50px;
+                padding: 10px 0;
+
+                & .cont1-links {
+                    display: flex;
+                    flex-direction: column;
+
+                    & a {
+                        color: #fff;
+                        text-decoration: none;
+                        display: flex;
+                        align-items: center;
+                        font-size: large;
+                        font-weight: 500;
+
+                        & span {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+
+            & .redes_endereco {
+                text-align: center;
+                font-size: large;
+                font-weight: 500;
+                margin: 0;
+                padding: 20px 0;
+            }
+        }
+
+        & .cont2 {
+            display: flex;
+
+
+            & .cont2-lista {
+                list-style: none;
+
+                & .titulo {
+                    margin: 0 0 20px 0;
+                    width: 250px;
+                }
+
+                & .link-rdp {
+                    margin: 10px 0 0 10px;
+                    font-size: large;
+
+                    & a {
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+    }
+
+    & .direitos {
+        margin: 0 0 20px 0;
+    }
+}
+
+/* Icone de paginas e adote */
+.formkit--down {
+    display: inline-block;
+    width: 1.5em;
+    height: 0.5em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 7'%3E%3Cpath fill='%23000' d='M8 6.5a.47.47 0 0 1-.35-.15l-4.5-4.5c-.2-.2-.2-.51 0-.71s.51-.2.71 0l4.15 4.15l4.14-4.14c.2-.2.51-.2.71 0s.2.51 0 .71l-4.5 4.5c-.1.1-.23.15-.35.15Z'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+/* Incone instagram */
+.mdi--instagram {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+/* Icone email */
+.material-symbols--mail-outline {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7L4 8v10h16V8zm0-2l8-5H4zM4 8V6v12z'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
