@@ -1,238 +1,569 @@
-body{
-    font-family: "Montserrat", sans-serif;
-}
 /* class para foto de fundo */
 .bck-img {
     background: url(../img/img-lojinha/full.jpg) no-repeat bottom;
 }
+
+/* Primeiro conteudo do main */
 .card_SejaV-Doe {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0 250px;
     width: 1400px;
-    margin: 80px auto;
+    margin: 80px auto -60px;
     color: #fff;
+    font-family: "Montserrat";
+
+    & .card-unidade {
+        position: relative;
+        width: 557px;
+        height: 776px;
+        text-align: center;
+
+        & .foto-texto {
+            width: 333px;
+            position: absolute;
+            z-index: 1;
+            bottom: 10%;
+            right: 18%;
+
+            & h1 {
+                font-size: 44px;
+            }
+
+            & p {
+                font-size: large;
+                margin-bottom: 100px;
+            }
+
+            & button {
+                cursor: pointer;
+                border-radius: 40px;
+                border: solid 2px #5b337abb;
+                background-color: #5b337abb;
+                color: #fff;
+                font-size: 28px;
+                font-weight: 100;
+                height: 70px;
+                width: 250px;
+                margin-bottom: -50px;
+                transition: 250ms;
+            }
+
+            & button:hover {
+                border-color: #886DA4;
+            }
+        }
+    }
 }
 
-.cards {
-    text-align: center;
-}
-
-.card_foto {
-    position: relative;
-    width: 557px;
-    height: 776px;
-}
-
-.foto-texto {
-    width: 333px;
-    position: absolute;
-    z-index: 1;
-    bottom: 10%;
-    right: 18%;
-}
-
-.foto-texto h1 {
-    font-size: 44px;
-}
-
-.foto-texto p {
-    font-size: large;
-    margin-bottom: 100px;
-}
-
-.foto-texto button {
-    cursor: pointer;
-    border-radius: 60px;
-    border: 0px;
-    background-color: #563377;
-    color: #fff;
-    font-size: 28px;
-    font-weight: 100;
-    height: 70px;
-    width: 250px;
-    margin-bottom: -50px;
-    transition: 500ms;
-}
-
-.foto-texto button:hover {
-    background-color: #E2CDEA;
-    border: 0px;
-}
-.foto-texto button:hover, .saiba-mais p{
-    color: #563377;
-}
 
 .faixa {
-    position: absolute;
     width: 100%;
-    margin-top: -140px;
-    z-index: -1;
-    height: 240px;
-    background: linear-gradient(180deg, #EAE4F2 1%, #FFFFFF 99%);
+    height: 160px;
+    background: rgb(162, 120, 195);
+    background: radial-gradient(circle, rgba(162, 120, 195, 0.9) 0%, rgba(181, 148, 215, 0.6) 60%, rgba(230, 205, 245, 0.3) 100%);
     margin-bottom: 0;
 }
+
+/* Segundo conteudo do main */
 
 .loja {
     text-align: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 0 auto 100px;
     grid-gap: 40px 250px;
     margin-top: 20px;
-}
 
-.loja_item {
-    margin: 40px 0;
-}
+    & .item {
+        margin: 40px 0;
 
-.item-texto {
-    font-size: x-large;
-    margin-bottom: 50px;
-}
+        & .item-texto {
+            height: 150px;
+            font-family: "Montserrat";
+            font-size: x-large;
 
-.item-texto p {
-    margin-bottom: 40px;
-}
+            & h3 {
+                color: #563377;
+                margin: 0 0 20px;
+            }
 
-.item-texto a {
-    padding: 20px 150px;
-    border-radius: 30px;
-    font-size: 25px;
-    background-color: #E2CDEA;
-    text-decoration: none;
-    color: #563377;
-    transition: 200ms;
-}
+            & p {
+                margin: 20px 0 35px;
+                color: #886DA4;
+            }
 
-h3{
-    color: #886DA4;
-}
-.item-texto a:hover {
-    transition: .5s;
-    background-color: #563377;
-    color: #E2CDEA;
-}
-.item-texto p{
-    color: #563377;
-}
+            & a {
+                padding: 12px 140px;
+                border-radius: 30px;
+                font-size: 25px;
+                background-color: #886DA4;
+                border: 2px solid #886DA4;
+                text-decoration: none;
+                color: #fff;
+                transition: 200ms;
+            }
 
-#back {
-    background-image: url(../imagens/img-lojinha/Group\ 20.svg), url(../imagens/img-lojinha/Group\ 21.svg);
-    background-repeat: no-repeat;
-    background-position: center left, bottom right;
+            & a:hover {
+                padding: 10px 140px;
+                background-color: #886da4d8;
+                border: 2px solid #563377;
+                color: #fff;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1400px) {
     .card_SejaV-Doe {
-        display: block;
-        width: 557px;
-        margin: 80px auto;
-    }
+        width: auto;
+        grid-gap: 0;
+        margin: 40px auto -30px;
 
-    .cards {
-        margin: 60px 0;
+        & .card-unidade {
+            width: 450px;
+            height: 650px;
+
+            & .foto {
+                width: 450px;
+                height: 650px;
+            }
+
+            & .foto-texto {
+                width: 250px;
+                position: absolute;
+                z-index: 1;
+                bottom: 10%;
+                right: 18%;
+
+                & h1 {
+                    font-size: 38px;
+                }
+
+                & p {
+                    margin-bottom: 50px;
+                }
+
+                & button {
+                    border-radius: 40px;
+                    font-size: 24px;
+                    width: 200px;
+                    height: 100px;
+                    margin-bottom: -45px;
+                }
+            }
+        }
     }
 
     .loja {
-        display: block;
-    }
+        max-width: 1400px;
+        margin: 0 auto 100px;
+        grid-gap: 40px 50px;
+        margin-top: 20px;
 
-    .loja_item {
-        margin: 60px 0;
-    }
+        & .item {
+            margin: 20px 0;
+            justify-items: center;
 
-    .item-texto {
-        margin: 0;
+            & figure {
+                width: 400px;
+                height: 480px;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            & .item-texto {
+                font-size: large;
+
+                & a {
+                    padding: 12px 100px;
+                    border-radius: 30px;
+                    font-size: 20px;
+                }
+
+                & a:hover {
+                    padding: 10px 100px;
+                    background-color: #886da4d8;
+                    border: 2px solid #563377;
+                    color: #fff;
+                }
+            }
+        }
     }
 }
 
-@media screen and (max-width: 1200px) {
-    #back {
-        background: none;
+@media screen and (max-width: 1024px) {
+    .card_SejaV-Doe {
+        width: 900px;
+        grid-gap: 0;
+        margin: 40px auto -30px;
+        justify-items: center;
+
+        & .card-unidade {
+            width: 350px;
+            height: 550px;
+
+            & .foto {
+                width: 350px;
+                height: 550px;
+            }
+
+            & .foto-texto {
+                width: 250px;
+                height: 420px;
+                position: absolute;
+                z-index: 1;
+                bottom: 10%;
+                right: 16%;
+
+                & h1 {
+                    font-size: 38px;
+                    margin: 0 0 35px;
+                }
+
+                & p {
+                    margin-bottom: 30px;
+                }
+
+                & button {
+                    border-radius: 50px;
+                    font-size: 20px;
+                    width: 160px;
+                    margin-bottom: -45px;
+                }
+            }
+        }
+    }
+
+    .loja {
+        width: auto;
+        margin: 0 auto 100px;
+        grid-gap: 20px 30px;
+        margin-top: 20px;
+
+        & .item {
+            margin: 20px 0;
+            justify-items: center;
+
+            & figure {
+                width: 300px;
+                height: 380px;
+                margin: 16px 0;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            & .item-texto {
+                font-size: large;
+
+                & a {
+                    padding: 12px 100px;
+                    border-radius: 30px;
+                    font-size: 20px;
+                }
+
+                & a:hover {
+                    padding: 10px 100px;
+                    background-color: #886da4d8;
+                    border: 2px solid #563377;
+                    color: #fff;
+                }
+            }
+        }
     }
 }
+@media screen and (max-width: 768px) {
+    .card_SejaV-Doe {
+        width: 700px;
+        grid-gap: 0;
+        margin: 40px auto -60px;
+        justify-items: center;
+
+        & .card-unidade {
+            width: 300px;
+            height: 450px;
+
+            & .foto {
+                width: 300px;
+                height: 450px;
+            }
+
+            & .foto-texto {
+                width: 250px;
+                height: 420px;
+                position: absolute;
+                z-index: 1;
+                bottom: -24%;
+                right: 8%;
+
+                & h1 {
+                    font-size: 30px;
+                    margin: 0 0 35px;
+                }
+
+                & p {
+                    margin-bottom: 20px;
+                    font-size: medium;
+                }
+
+                & button {
+                    border-radius: 50px;
+                    font-size: 20px;
+                    width: 160px;
+                    height: 50px;
+                    margin-bottom: -45px;
+                }
+            }
+        }
+    }
+
+    .loja {
+        width: auto;
+        margin: 0 auto 100px;
+        grid-gap: 20px 30px;
+        margin-top: 20px;
+
+        & .item {
+            margin: 20px 0;
+            justify-items: center;
+
+            & figure {
+                width: 300px;
+                height: 380px;
+                margin: 16px 0;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            & .item-texto {
+                font-size: medium;
+
+                & p {
+                    font-weight: 500;
+                    margin: 15px 0 25px;
+                }
+
+                & a {
+                    padding: 12px 100px;
+                    border-radius: 30px;
+                    font-size: 20px;
+                }
+
+                & a:hover {
+                    padding: 10px 100px;
+                    background-color: #886da4d8;
+                    border: 2px solid #563377;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
 
 @media screen and (max-width: 600px) {
     .card_SejaV-Doe {
-        width: 100%;
-    }
-
-    .cards {
-        margin: 30px 0;
-    }
-
-    .card_foto {
-        height: auto;
-        width: 300px;
-        margin: 0 auto;
-    }
-
-    .card_foto img {
-        width: 100%;
-    }
-
-    .foto-texto {
-        right: 0%;
-        width: 300px;
-    }
-
-    .foto-texto h1 {
-        font-size: 25px;
-    }
-
-    .foto-texto p {
-        font-size: 15px;
-        margin-bottom: 20px;
-    }
-
-    .foto-texto button {
-        padding: 10px 40px;
         width: auto;
-        height: auto;
-        font-size: 20px;
-    }
-
-    .faixa {
-        height: 250px;
-    }
-
-    .loja_item img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .loja_item {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        margin: 40px auto;
+        justify-items: center;
+
+        & .card-unidade {
+            width: 200px;
+            height: 325px;
+
+            & .foto {
+                width: 200px;
+                height: 325px;
+            }
+
+            & .foto-texto {
+                width: 180px;
+                height: 200px;
+                position: absolute;
+                z-index: 1;
+                bottom: 0%;
+                right: 5%;
+
+                & h1 {
+                    font-size: medium;
+                    margin: 0 0 20px;
+                }
+
+                & p {
+                    font-size: x-small;
+                    margin-bottom: 15px;
+                }
+
+                & button {
+                    border-radius: 50px;
+                    font-size: small;
+                    width: 130px;
+                    height: 30px;
+                    margin-bottom: -45px;
+                }
+            }
+        }
+    }
+    
+    .faixa {
+        height: 0px;
     }
 
-    .item-texto a {
-        padding: 20px 40px;
+    .loja {
+        width: auto;
+        margin: 0 auto 80px;
+        display: block;
+
+        & .item {
+            margin: 20px 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+
+            & figure {
+                width: 175px;
+                height: 200px;
+                margin: 16px 0;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            & .item-texto {
+                width: 225px;
+
+
+                & h1 {
+                    font-size: 38px;
+                    margin: 0 0 45px;
+                }
+
+                & p {
+                    margin-bottom: 35px;
+                }
+
+                & a {
+                    padding: 6px 55px;
+                    border-radius: 30px;
+                    font-size: 15px;
+                    
+                }
+
+                & a:hover {
+                    background-color: #886da4d8;
+                    border: 2px solid #563377;
+                    color: #fff;
+                }
+            }
+        }
     }
 }
 
 @media screen and (max-width: 500px) {
-    .loja_item figure {
-        margin: 0;
+    .card_SejaV-Doe {
+        display: block;
+        margin: 40px auto;
+
+        & .card-unidade {
+            width: 280px;
+            height: 400px;
+            margin: 20px 0;
+
+            & .foto {
+                width: 280px;
+                height: 400px;
+            }
+
+            & .foto-texto {
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                z-index: 1;
+                bottom: 12%;
+                right: 15%;
+
+                & h1 {
+                    font-size: larger;
+                    margin: 0 0 10px;
+                }
+
+                & p {
+                    font-size: small;
+                    margin-bottom: 15px;
+                }
+
+                & button {
+                    border-radius: 50px;
+                    font-size: large;
+                    width: 130px;
+                    height: 40px;
+                    margin-bottom: -45px;
+                }
+            }
+        }
     }
 
-    .loja_item img {
-        width: 150px;
-        height: 150px;
-    }
+    .loja {
+        width: auto;
+        margin: 0 auto 80px;
+        display: block;
 
-    .item-texto {
-        font-size: smaller;
-    }
+        & .item {
+            margin: 20px 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
 
-    .item-texto p {
-        margin-bottom: 20px;
-    }
+            & figure {
+                width: 150px;
+                height: 175px;
+                margin: 16px 0;
 
-    .item-texto a {
-        padding: 10px 20px;
-        font-size: 10px;
+                & img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            & .item-texto {
+                width: 150px;
+
+
+                & h1 {
+                    font-size: 38px;
+                    margin: 0 0 45px;
+                }
+
+                & p {
+                    margin-bottom: 35px;
+                }
+
+                & a {
+                    padding: 6px 30px;
+                    border-radius: 30px;
+                    font-size: 15px;
+                    
+                }
+
+                & a:hover {
+                    background-color: #886da4d8;
+                    border: 2px solid #563377;
+                    color: #fff;
+                }
+            }
+        }
     }
 }

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Jurema - Loja</title>
+    <title>Projeto Jurema</title>
 
     <link rel="shortcut icon" href="../img/global/logopng.ico">
     <link rel="stylesheet" href="../css/lojinha.css">
@@ -20,11 +20,79 @@
 </head>
 
 <body>
-    <main id="back">
+    <header class="bck-img">
+        <article class="bck-color">
+
+            <div class="cont-ini">
+                <figure><a href="home.html"><img src="../img/global/logonav.png" alt="Logo do Projeto Jurema"></a>
+                </figure>
+                <ul class="nav-menu">
+                    <li id="pag">Páginas<span class="formkit--down"></span>
+                        <div id="click-nav_pag">
+                            <ul>
+                                <li class="links"><a href="home.html">Home</a></li>
+                                <li class="links"><a href="historia.html">Nossa História</a></li>
+                                <li class="links"><a href="lojinha.html">Lojinha</a></li>
+                                <li class="links"><a href="resgates.html">Resgates</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li id="adote">Adote<span class="formkit--down"></span>
+                        <div id="click-nav_adote">
+                            <ul>
+                                <li class="links"><a href="adote-cachorro.html">Cachorros</a></li>
+                                <li class="links"><a href="adote-gato.html">Gatos</a></li>
+                                <li class="links"><a href="adote-cavalo.html">Cavalos</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <button class="doe-agora"><a href="doe.html">Doe Agora</a></button>
+                </ul>
+
+                <div class="mobile close">
+                    <span class="tabler--menu-2" onclick="showMenu()"></span>
+
+                    <div class="nav-menu_mobile close">
+                        <ul>
+                            <li id="pag_mobile">
+                                <p>Páginas<span class="formkit--down"></span></p>
+                                <div id="click-nav_pag_mobile">
+                                    <ul>
+                                        <li class="links-mobile"><a href="home.html">Home</a></li>
+                                        <li class="links-mobile"><a href="historia.html">Nossa História</a></li>
+                                        <li class="links-mobile"><a href="lojinha.html">Lojinha</a></li>
+                                        <li class="links-mobile"><a href="resgates.html">Resgates</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li id="adote_mobile">
+                                <p>Adote<span class="formkit--down"></p>
+                                <div id="click-nav_adote_mobile">
+                                    <ul>
+                                        <li class="links-mobile"><a href="adote-cachorro.html">Cachorros</a></li>
+                                        <li class="links-mobile"><a href="adote-cavalo.html">Cavalos</a></li>
+                                        <li class="links-mobile"><a href="adote-gato.html">Gatos</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <button class="doe-agora_mobile"><a href="doe.html">Doe Agora</a></button>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="destaque">
+                <h1>Lojinha</h1>
+                <p>Aqui, cada compra faz a diferença! Ao adquirir nossos produtos, você contribui diretamente para o cuidado e proteção de animais resgatados! </p>
+            </div>
+        </article>
+    </header>
+
+    <main>
         <section class="card_SejaV-Doe">
-            <article class="cards">
-                <div class="card_foto">
-                    <img src="../img/img-lojinha/SejaVoluntario.png" alt="">
+                <article class="card-unidade">
+                    <img class="foto" src="../img/img-lojinha/SejaVoluntario.png" alt="">
 
                     <div class="foto-texto">
                         <h1>Seja Voluntario</h1>
@@ -35,12 +103,10 @@
                             href="https://wa.me/5519989219327?text=Olá,%20gostaria%20de%20me%20voluntariar%20ao%20projeto%20Jurema.%20"><button
                                 class="saiba-mais">Saiba Mais</button></a>
                     </div>
-                </div>
-            </article>
+                </article>
 
-            <article class="cards">
-                <div class="card_foto">
-                    <img src="../img/img-lojinha/Doe.png" alt="">
+                <article class="card-unidade">
+                    <img class="foto" src="../img/img-lojinha/Doe.png" alt="">
 
                     <div class="foto-texto">
                         <h1>Doe</h1>
@@ -50,14 +116,13 @@
                             vida. Ajude a fazer a diferença hoje doando para uma instituição que cuida de animais!</p>
                         <a href="../Páginas/doe.html"><button class="saiba-mais">Saiba Mais</button></a>
                     </div>
-                </div>
-            </article>
+                </article>
         </section>
 
         <article class="faixa"></article>
 
         <section class="loja">
-            <article class="loja_item">
+            <article class="item">
                 <figure>
                     <img src="../img/img-lojinha/camisa.png" alt="Item de loja">
                 </figure>
@@ -68,7 +133,7 @@
                         target="_blank">Eu Quero !</a>
                 </div>
             </article>
-            <article class="loja_item">
+            <article class="item">
                 <figure>
                     <img src="../img/img-lojinha/camisa.png" alt="Item de loja">
                 </figure>
@@ -79,7 +144,7 @@
                         target="_blank">Eu Quero !</a>
                 </div>
             </article>
-            <article class="loja_item">
+            <article class="item">
                 <figure>
                     <img src="../img/img-lojinha/camisa.png" alt="Item de loja">
                 </figure>
@@ -90,7 +155,7 @@
                         target="_blank">Eu Quero !</a>
                 </div>
             </article>
-            <article class="loja_item">
+            <article class="item">
                 <figure>
                     <img src="../img/img-lojinha/camisa.png" alt="Item de loja">
                 </figure>
@@ -104,6 +169,48 @@
         </section>
     </main>
 
+    <footer>
+        <div class="conteiner">
+            <div class="cont1">
+                <div class="redes">
+                    <figure><img src="../img/global/logonav.png" alt="Logo do Projeto Jurema"></figure>
+
+                    <div class="redes-links">
+                        <a href="https://www.instagram.com/projeto_jurema/"><span
+                                class="mdi--instagram"></span>@projeto_jurema</a>
+                        <a href="mailto:admprojetojurema@gmail.com"><span
+                                class="material-symbols--mail-outline"></span>admprojetojurema@gmail.com</a>
+                    </div>
+
+                </div>
+
+                <p class="redes-endereco">
+                    Av. Vereador José Bordin 96 - Vila Braga
+                    <br>Aguaí - SP
+                    <br>CEP 13860-352
+                    <br>CNPJ 50.190.373/0001-40
+                </p>
+            </div>
+
+            <div class="cont2">
+                <ul class="cont2-lista">
+                    <h1 class="titulo">Páginas</h1>
+                    <li class="link-rdp"><a href="home.html">Home</a></li>
+                    <li class="link-rdp"><a href="historia.html">Nossa História</a></li>
+                    <li class="link-rdp"><a href="lojinha.html">Lojinha</a></li>
+
+                </ul>
+                <ul class="cont2-lista">
+                    <h1 class="titulo">Como Ajudar</h1>
+                    <li class="link-rdp"><a href="doe.html">Doação</a></li>
+                    <li class="link-rdp"><a href="adote/adote-cachorro.html">Adote</a></li>
+                    <li class="link-rdp
+                link-rdp"><a href="voluntarios.html">Seja Voluntário</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="direitos">© 2024 Projeto Jurema. Todos os direitos reservados.</p>
+    </footer>
 </body>
 
 </html>
