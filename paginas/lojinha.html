@@ -23,17 +23,19 @@
     <header class="bck-img">
         <article class="bck-color">
 
+            <div class="navbar">
+            <div class="images-nav">
             <div class="cont-ini">
-                <figure><a href="home.html"><img src="../img/global/logonav.png" alt="Logo do Projeto Jurema"></a>
+                <figure><a href="home.html"><img src="../img/global/logopng.ico" class='logo' alt="Logo do Projeto Jurema"></a>
                 </figure>
                 <ul class="nav-menu">
                     <li id="pag">Páginas<span class="formkit--down"></span>
                         <div id="click-nav_pag">
                             <ul>
-                                <li class="links"><a href="home.html">Home</a></li>
-                                <li class="links"><a href="historia.html">Nossa História</a></li>
-                                <li class="links"><a href="lojinha.html">Lojinha</a></li>
-                                <li class="links"><a href="resgates.html">Resgates</a></li>
+                                <a href="home.html"><li class="links">Home</li></a>
+                                <a href="historia.html"><li class="links">Nossa História</li></a>
+                                <a href="lojinha.html"><li class="links">Lojinha</li></a>
+                                <a href="resgates.html"><li class="links">Resgates</li></a>
                             </ul>
                         </div>
                     </li>
@@ -41,50 +43,50 @@
                     <li id="adote">Adote<span class="formkit--down"></span>
                         <div id="click-nav_adote">
                             <ul>
-                                <li class="links"><a href="adote-cachorro.html">Cachorros</a></li>
-                                <li class="links"><a href="adote-gato.html">Gatos</a></li>
-                                <li class="links"><a href="adote-cavalo.html">Cavalos</a></li>
+                                <a href="adote-cachorro.html"><li class="links">Cachorros</li></a>
+                                <a href="adote-gato.html"><li class="links">Gatos</li></a>
+                                <a href="adote-cavalo.html"><li class="links">Cavalos</li></a>
                             </ul>
                         </div>
                     </li>
-                    <button class="doe-agora"><a href="doe.html">Doe Agora</a></button>
+                    <a href="doe.html"><button class="doe-agora">Doe Agora</button></a>
                 </ul>
-
+            </div>
                 <div class="mobile close">
                     <span class="tabler--menu-2" onclick="showMenu()"></span>
-
-                    <div class="nav-menu_mobile close">
-                        <ul>
-                            <li id="pag_mobile">
-                                <p>Páginas<span class="formkit--down"></span></p>
-                                <div id="click-nav_pag_mobile">
-                                    <ul>
-                                        <li class="links-mobile"><a href="home.html">Home</a></li>
-                                        <li class="links-mobile"><a href="historia.html">Nossa História</a></li>
-                                        <li class="links-mobile"><a href="lojinha.html">Lojinha</a></li>
-                                        <li class="links-mobile"><a href="resgates.html">Resgates</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li id="adote_mobile">
-                                <p>Adote<span class="formkit--down"></p>
-                                <div id="click-nav_adote_mobile">
-                                    <ul>
-                                        <li class="links-mobile"><a href="adote-cachorro.html">Cachorros</a></li>
-                                        <li class="links-mobile"><a href="adote-cavalo.html">Cavalos</a></li>
-                                        <li class="links-mobile"><a href="adote-gato.html">Gatos</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <button class="doe-agora_mobile"><a href="doe.html">Doe Agora</a></button>
-                        </ul>
-                    </div>
+                </div>
+            </div>
+                <div class="nav-menu_mobile close">
+                    <ul class="ul_mobile">
+                        <li id="pag_mobile">
+                            <p>Páginas<span class="formkit--down"></span></p>
+                            <div id="click-nav_pag_mobile">
+                                <ul class="ul_mobile links-lista">
+                                    <a href="home.html"><li class="links-mobile">Home</li></a>
+                                    <a href="historia.html"><li class="links-mobile">Nossa História</li></a>
+                                    <a href="lojinha.html"><li class="links-mobile">Lojinha</li></a>
+                                    <a href="resgates.html"><li class="links-mobile">Resgates</li></a>
+                                </ul>
+                            </div>
+                        </li>
+                        <li id="adote_mobile">
+                            <p>Adote<span class="formkit--down"></p>
+                            <div id="click-nav_adote_mobile">
+                                <ul class="ul_mobile links-lista">
+                                    <a href="adote-cachorro.html"><li class="links-mobile">Cachorros</li></a>
+                                    <a href="adote-cavalo.html"><li class="links-mobile">Cavalos</li></a>
+                                    <a href="adote-gato.html"><li class="links-mobile">Gatos</li></a>
+                                </ul>
+                            </div>
+                        </li>
+                        <a href="doe.html" class="doe-agora_mobile">Doe Agora</a>
+                    </ul>
                 </div>
             </div>
 
             <div class="destaque">
                 <h1>Lojinha</h1>
-                <p>Aqui, cada compra faz a diferença! Ao adquirir nossos produtos, você contribui diretamente para o cuidado e proteção de animais resgatados! </p>
+                <p id="escrita"></p>
             </div>
         </article>
     </header>
@@ -168,7 +170,6 @@
             </article>
         </section>
     </main>
-
     <footer>
         <div class="conteiner">
             <div class="cont1">
@@ -213,4 +214,18 @@
     </footer>
 </body>
 
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://safi.me.uk/typewriterjs/js/typewriter.js"></script>
+<script>
+        // escrita
+    var write = document.getElementById('escrita');
+
+    var typewriter = new Typewriter(write, {
+        loop: true
+    });
+
+    typewriter.typeString('Aqui, cada compra faz a diferença!')
+        .pauseFor(2500)
+        .start();
+</script>
 </html>

@@ -198,7 +198,7 @@
 
 @media screen and (max-width: 1024px) {
     .card_SejaV-Doe {
-        width: 900px;
+        width: auto;
         grid-gap: 0;
         margin: 40px auto -30px;
         justify-items: center;
