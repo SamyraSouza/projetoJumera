@@ -107,7 +107,7 @@
         <div class="imgres">
         <img class="img-AnaC" id="img" src="../img/img-resgate/AnaCastela1.jpg" alt="resgate Ana Castela">
         </div>
-        <div class="div-historia">
+        <div class="div-historia animar">
             <p>Ana Castela foi uma égua resgatada, proveniente de uma mãe que fora abandonada nas ruas. Após seu nascimento, sua mãe faleceu e nós a acolhemos com todo o cuidado e carinho necessário. </p>
         </div>
         </div>
@@ -116,7 +116,7 @@
         <div class="imgres">
         <img class="img-anac2" id="img" src="../img/img-resgate/AnaCastela2.jpg" alt="resgate Ana Castela">
         </div>
-        <p class="div-historia">Hoje, Ana Castela desfruta de plena saúde e bem-estar, frutos de nossos cuidados. Após um período ao nosso lado, encontrou um novo lar e foi adotada.</p>
+        <p class="div-historia animar2">Hoje, Ana Castela desfruta de plena saúde e bem-estar, frutos de nossos cuidados. Após um período ao nosso lado, encontrou um novo lar e foi adotada.</p>
         </div>
 
         <div class="pata">
@@ -128,7 +128,7 @@
             <div class="imgres">
             <img class="img-AnaC" id="img" src="../img/img-resgate/Vicente1.png" alt="resgate Vicente">
             </div>
-            <div class="div-historia">
+            <div class="div-historia animar3">
                 <p>Vicente foi resgatado com uma grave infestação de bicheira, que o levou a perder uma orelha. Posteriormente, enfrentou os desafios da cinomose e da doença do carrapato. </p>
              </div>
             </div>
@@ -137,7 +137,7 @@
             <div class="imgres">
             <img class="img-anac2" id="img" src="../img/img-resgate/Vicente2.png" alt="resgate Vicente">
             </div>
-            <p class="div-historia"> Apesar da difícil jornada, com cuidados intensivos, ele se recuperou completamente. Sua trajetória foi uma verdadeira batalha, porém hoje Vicente encontrou um novo lar e está desfrutando de uma vida feliz e saudável ao lado de sua família adotiva.</p>
+            <p class="div-historia animar4"> Apesar da difícil jornada, com cuidados intensivos, ele se recuperou completamente. Sua trajetória foi uma verdadeira batalha, porém hoje Vicente encontrou um novo lar e está desfrutando de uma vida feliz e saudável ao lado de sua família adotiva.</p>
         </div>
 
         <div class="pata">
@@ -216,6 +216,39 @@ var typewriter = new Typewriter(write, {
 typewriter.typeString('Descubra histórias de animais resgatados.')
     .pauseFor(2500)
     .start();
+</script>
+
+<script>
+  
+    const animarDiv = document.querySelector('.animar');
+    const animarDiv2 = document.querySelector('.animar2');
+    const animarDiv3 = document.querySelector('.animar3');
+    const animarDiv4 = document.querySelector('.animar4');
+
+    function verificarVisibilidade() {
+        const rect = animarDiv.getBoundingClientRect();
+        const rect2 = animarDiv2.getBoundingClientRect();
+        const rect3 = animarDiv3.getBoundingClientRect();
+        const rect4 = animarDiv3.getBoundingClientRect();
+
+        if (rect.top <= (window.innerHeight) && rect.bottom >= 0) {
+            animarDiv.classList.add('aparece');
+        }
+        if (rect2.top <= window.innerHeight && rect2.bottom >= 0) {
+            animarDiv2.classList.add('aparece');
+        }
+        if (rect3.top <= window.innerHeight && rect3.bottom >= 0) {
+            animarDiv3.classList.add('aparece');
+        }
+        if (rect4.top <= window.innerHeight && rect4.bottom >= 0) {
+            animarDiv4.classList.add('aparece');
+        }
+        
+    }
+
+    window.addEventListener('scroll', verificarVisibilidade);
+    
+    verificarVisibilidade();
 </script>
 
 </html>

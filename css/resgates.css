@@ -15,6 +15,16 @@
     align-items: center;
 }
 
+.animar, .animar2, .animar3, .animar4 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease, transform 2s ease;
+}
+
+.animar.aparece,.animar2.aparece, .animar3.aparece, .animar4.aparece {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 .titulo-res{
