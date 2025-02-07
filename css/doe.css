@@ -1,0 +1,234 @@
+/* class para foto de fundo */
+.bck-img {
+    background: url(../img/img-doe/nav-doe.webp) no-repeat center;
+    background-size: cover;
+}
+*{
+    font-family: 'montserrat', sans-serif;
+}
+
+.titulo-1{
+    margin-top: 3rem;
+    color: #4c2372;
+    text-align: center;
+    font-size: 2rem;
+}
+.paragf{
+    text-align: center;
+    padding: 50px;
+    color: #4c2372;
+    font-size: large;
+
+}
+.titulo-2{
+    margin-top: 3rem;
+    color: #4c2372;
+    text-align: center;
+    font-size: 2rem;
+}
+.sub-titulo{
+    padding: 20px;
+    margin-bottom: 4rem;
+    color: #4c2372;
+    font-size: 25px;
+}
+
+.sub{
+    padding: 20px;
+    margin-top: 4rem;
+    color: #4c2372;
+    font-size: 25px;
+}
+
+.doarmais{
+    flex-wrap: wrap;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 70px;
+}
+
+.kit_doacao {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #4c2372;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1270px;
+    row-gap: 140px;
+    column-gap: 150px;
+    margin-left: 6rem;
+    margin-right: 5rem;
+    margin-bottom: 70px;
+}
+
+.kit_doacao p {
+    width: 100%;
+    margin: 10px 20px;
+}
+
+.valores_kit {
+    width: 100%;
+    font-size: 32px;
+    font-weight: 900;
+    
+}
+
+.titulo_kit {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.kit_doe1 {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+    height: 300px;
+    width: 500px;
+    background-color: #EAE4F2;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 0px rgba(147, 104, 180, 0.5);
+    justify-content: space-evenly;
+    transition: 0.5s;
+}
+.kit_doe1:hover{
+    transform: scale(1.1);
+}
+.texto_kit{
+    font-family: 'montserrat', sans-serif;
+    color: #4c2372;
+    font-weight: 400;
+}
+.btn-doekit {
+    font-size: 25px;
+    white-space: nowrap;
+    padding: 10px 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: #4c2372;
+    transition: all .3s ease;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.btn-doekit:hover {
+    background-color: #EAE4F2;
+    color: #4c2372;
+}
+
+@media (max-width: 1024px) {
+
+    /* Doação */
+    .kit_doacao {
+        gap: 50px;
+        justify-items: center;
+    }
+
+    .kit_doacao p {
+        margin: 5px 15px;
+    }
+
+    .kit_doe1 {
+        width: 320px;
+        height: 250px;
+    }
+
+    .titulo_kit {
+        font-size: large;
+    }
+
+    .valores_kit {
+        font-size: larger;
+    }
+
+    .btn-doekit {
+        font-size: 18px;
+        padding: 10px 25px;
+    }
+}
+.sub-titulo, .sub{
+    text-align: center;
+}
+
+@media (max-width: 780px) {
+
+    /* Doação */
+    .kit_doacao {
+        gap: 25px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 550px) {
+
+    /* Doação */
+    .kit_doacao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .kit_doe1 {
+        width: 250px;
+        height: 250px;
+    }
+
+    .titulo-2, b, .sub-titulo, .sub{
+        font-size: 20px;
+    }
+
+    .btn-doekit {
+        font-size: 18px;
+        padding: 10px 25px;
+    }
+
+    .texto_kit {
+        font-size: smaller;
+    }
+}
+.btn-1{
+    border: 1px solid #4c2372;
+    background-color: #4c2372;
+    padding: 10px 50px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #fff;
+    transition: all .3s ease;
+}
+.animar, .animar2, .animar3, .animar4 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease, transform 2s ease;
+}
+
+.animar.aparece,.animar2.aparece, .animar3.aparece, .animar4.aparece {
+    opacity: 1;
+    transform: translateY(0);
+}
+.btn-1:hover {
+    background-color:#EAE4F2;
+    color: #4c2372;
+}
+.btn-2{
+    border: 1px solid #4c2372;
+    background-color: #4c2372;
+    padding: 10px 50px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #fff;
+    transition: all .3s ease;
+}
+.btn-2:hover {
+    background-color: #EAE4F2;
+    color: #381639;
+}
