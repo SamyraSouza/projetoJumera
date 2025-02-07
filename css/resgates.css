@@ -1,0 +1,256 @@
+/* class para foto de fundo */
+.bck-img {
+    background: url(../img/img-resgate/cavalo-navbar.jpeg) no-repeat center;
+    background-size: cover;
+}
+*{
+    font-family: 'montserrat', sans-serif;
+}
+
+.ana1{
+    gap: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.titulo-res{
+    text-align: center;
+    color:  #4c2372;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.imgres{
+    border-radius: 20px;
+    overflow: hidden;
+    width: 300px;
+    height: 400px;
+
+    & img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.imgres:hover{
+    box-shadow: 10px 0px 10px #e3d2f07c;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.img-ac2{
+    margin-left: auto;
+}
+.div-historia{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    height: 200px;
+    width: 400px;
+    background-color: #EAE4F2;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 0px rgba(147, 104, 180, 0.5);
+
+}
+.div-a{
+    display: flex;
+    margin-top: 100px;
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.div-Vmal{
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+main p{
+        color: #4c2372;
+        font-weight: 500;
+}
+
+.div-v{
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.div-volunt{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+    height: 300px;
+    width: 500px;
+    background-color: #EAE4F2;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 0px rgba(147, 104, 180, 0.5);
+    color: #4c2372;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.t-volunt{
+    margin-left: 20px;
+}
+
+  .botlink {
+    gap: 30px;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .botlink a {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 200px;
+    background-color: #e1cdf1;
+    height: 50px;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #563377;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .botlink a:hover {
+    background-color: #563377;
+    color:#e1cdf1;
+    transition: 0.5s;
+  }
+
+.btn-volunt{
+    font-size: 20px;
+    white-space: nowrap;
+    padding: 8px 45px;
+    border-radius: 50px;
+    border: none;
+    background-color: #4c2372;
+    transition: all .3s ease;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    cursor: pointer;
+}
+.pata{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.pata img{
+    width: 40px;
+    height: 40px;
+}
+/* Seja voluntário */
+
+.seja_voluntario{
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card_voluntario{
+    padding: 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EAE4F2;
+    margin-bottom: 60px;
+    border-radius: 30px;
+    box-shadow: 10px 0px 10px #e3d2f07c;
+}
+.tit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tit img{
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;
+}
+.tit h1{
+    font-size: 40px;
+    color: #563377;
+}
+
+.card_voluntario p{
+    width: 400px;
+    color: #623C83;
+    text-align: center;
+}
+.card_voluntario h2{
+    text-align: center;
+    color: #563377;
+}
+.voluntario{
+    cursor: pointer;
+    background-color: #563377;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.links_cards button:hover, .voluntario:hover {
+    transition: .5s;
+    background-color: #9e83b47c;
+    color: #563377;
+}
+.voluntario p{
+    color: white;
+    margin: 10px;
+}
+.voluntario:hover p{
+    color: #563377;
+
+}
+@media (max-width: 771px) {
+    .card_voluntario {
+        width: 70%;
+
+        & p {
+            width: 90%;
+            font-size: 15px;
+        }
+        & h2 {
+            font-size: 20px;
+        }
+    }
+    .tit h1{
+        font-size: 20px;
+    }
+}
+@media (max-width: 516px) {
+    main p {
+        font-size: 15px;
+    }
+    .div-historia{
+        width: 70%;
+    }
+}

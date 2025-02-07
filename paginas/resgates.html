@@ -21,35 +21,143 @@
 
 <body>
     <header class="bck-img">
-        <div class="bck-color">
+        <article class="bck-color">
+    
+            <div class="navbar">
+            <div class="images-nav">
             <div class="cont-ini">
-                <figure><a href="home.html"><img src="../img/global/logonav.png" alt="Logo do Projeto Jurema"></a>
+                <figure><a href="home.html"><img src="../img/global/logopng.ico" class='logo' alt="Logo do Projeto Jurema"></a>
                 </figure>
-                <ul>
-                    <li id="pag">Páginas<span class="formkit--down"></span></li>
-                    <li id="adote">Adote<span class="formkit--down"></span></li>
-                    <button class="doe-agora"><a href="doe.html">Doe Agora</a></button>
+                <ul class="nav-menu">
+                    <li id="pag">Páginas<span class="formkit--down"></span>
+                        <div id="click-nav_pag">
+                            <ul>
+                                <a href="home.html"><li class="links">Página Inicial</li></a>
+                                <a href="historia.html"><li class="links">Nossa História</li></a>
+                                <a href="lojinha.html"><li class="links">Lojinha</li></a>
+                                <a href="resgates.html"><li class="links">Resgates</li></a>
+                            </ul>
+                        </div>
+                    </li>
+    
+                    <li id="adote">Adote<span class="formkit--down"></span>
+                        <div id="click-nav_adote">
+                            <ul>
+                                <a href="adote-cachorro.html"><li class="links">Cachorros</li></a>
+                                <a href="adote-gato.html"><li class="links">Gatos</li></a>
+                                <a href="adote-cavalo.html"><li class="links">Cavalos</li></a>
+                            </ul>
+                        </div>
+                    </li>
+                    <a href="doe.html"><button class="doe-agora">Doe Agora</button></a>
+                </ul>
+            </div>
+                <div class="mobile close">
+                    <span class="tabler--menu-2" onclick="showMenu()"></span>
+                </div>
+            </div>
+                <div class="nav-menu_mobile close">
+                    <ul class="ul_mobile">
+                        <li id="pag_mobile">
+                            <p>Páginas<span class="formkit--down"></span></p>
+                            <div id="click-nav_pag_mobile">
+                                <ul class="ul_mobile links-lista">
+                                    <a href="home.html"><li class="links-mobile">Página Inicial</li></a>
+                                    <a href="historia.html"><li class="links-mobile">Nossa História</li></a>
+                                    <a href="lojinha.html"><li class="links-mobile">Lojinha</li></a>
+                                    <a href="resgates.html"><li class="links-mobile">Resgates</li></a>
+                                </ul>
+                            </div>
+                        </li>
+                        <li id="adote_mobile">
+                            <p>Adote<span class="formkit--down"></p>
+                            <div id="click-nav_adote_mobile">
+                                <ul class="ul_mobile links-lista">
+                                    <a href="adote-cachorro.html"><li class="links-mobile">Cachorros</li></a>
+                                    <a href="adote-cavalo.html"><li class="links-mobile">Cavalos</li></a>
+                                    <a href="adote-gato.html"><li class="links-mobile">Gatos</li></a>
+                                </ul>
+                            </div>
+                        </li>
+                        <a href="doe.html" class="doe-agora_mobile">Doe Agora</a>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="destaque">
+                <h1>Resgates</h1>
+                <p id="escrita"></p>
+         
+                    <div class="botlink">
+                      <a href="#ana">Ana Castela</a>
+                      <a href="#vicente">Vicente</a>
+                    </div>             
 
-                </ul>
             </div>
-            <div id="click-nav_pag">
-                <ul>
-                    <li class="links"><a href="home.html">Home</a></li>
-                    <li class="links"><a href="historia.html">Nossa História</a></li>
-                    <li class="links"><a href="lojinha.html">Lojinha</a></li>
-                    <li class="links"><a href="doe.html">Doe</a></li>
-                    <li class="links"><a href="resgates.html">Resgates</a></li>
-                </ul>
-            </div>
-            <div id="click-nav_adote">
-                <ul>
-                    <li class="links"><a href="adote/adote-cachorro.html">Cachorros</a></li>
-                    <li class="links"><a href="adote/adote-gato.html">Gatos</a></li>
-                    <li class="links"><a href="adote/adote-cavalo.html">Cavalos</a></li>
-                </ul>
-            </div>
-        </div>
+        </article>
     </header>
+
+    <main>
+        <div class="pata">
+        <img src="../img/img-resgate/patas.png" alt="Pata">
+        </div>
+        <h4 class="titulo-res" id="ana">Ana Castela</h4>
+
+        <div class="ana1">
+        <div class="imgres">
+        <img class="img-AnaC" id="img" src="../img/img-resgate/AnaCastela1.jpg" alt="resgate Ana Castela">
+        </div>
+        <div class="div-historia">
+            <p>Ana Castela foi uma égua resgatada, proveniente de uma mãe que fora abandonada nas ruas. Após seu nascimento, sua mãe faleceu e nós a acolhemos com todo o cuidado e carinho necessário. </p>
+        </div>
+        </div>
+
+        <div class="div-a">
+        <div class="imgres">
+        <img class="img-anac2" id="img" src="../img/img-resgate/AnaCastela2.jpg" alt="resgate Ana Castela">
+        </div>
+        <p class="div-historia">Hoje, Ana Castela desfruta de plena saúde e bem-estar, frutos de nossos cuidados. Após um período ao nosso lado, encontrou um novo lar e foi adotada.</p>
+        </div>
+
+        <div class="pata">
+            <img src="../img/img-resgate/patas.png" alt="Pata">
+        </div>
+        <h4 class="titulo-res" id="vicente">Vicente</h4>
+
+        <div class="ana1" >
+            <div class="imgres">
+            <img class="img-AnaC" id="img" src="../img/img-resgate/Vicente1.png" alt="resgate Vicente">
+            </div>
+            <div class="div-historia">
+                <p>Vicente foi resgatado com uma grave infestação de bicheira, que o levou a perder uma orelha. Posteriormente, enfrentou os desafios da cinomose e da doença do carrapato. </p>
+             </div>
+            </div>
+    
+            <div class="div-a">
+            <div class="imgres">
+            <img class="img-anac2" id="img" src="../img/img-resgate/Vicente2.png" alt="resgate Vicente">
+            </div>
+            <p class="div-historia"> Apesar da difícil jornada, com cuidados intensivos, ele se recuperou completamente. Sua trajetória foi uma verdadeira batalha, porém hoje Vicente encontrou um novo lar e está desfrutando de uma vida feliz e saudável ao lado de sua família adotiva.</p>
+        </div>
+
+        <div class="pata">
+            <img src="../img/img-resgate/patas.png" alt="Pata">
+        </div>
+
+        <section class="seja_voluntario">
+            <div class="card_voluntario">
+            <div class="tit">
+            <img src="../img/img-home/coracao_pata.png" alt="Coração com pata">
+            <h1>Seja Voluntário</h1>
+            </div>
+            <p>Junte-se a nós para fazer a diferença na vida dos animais - Seja voluntário em nossa ONG e ajude a criar um mundo onde cada criatura tenha amor, cuidado e proteção.</p>
+            <h2>Clique no botão abaixo e se inscreva</h2>
+            <div class="voluntario">
+                <p>Quero ser Voluntário</p>
+            </div>
+            </div>
+        </section>
+</main>
 
     <footer>
         <div class="conteiner">
@@ -94,6 +202,20 @@
         </div>
         <p class="direitos">© 2024 Projeto Jurema. Todos os direitos reservados.</p>
     </footer>
+    <script src="https://safi.me.uk/typewriterjs/js/typewriter.js"></script>
 </body>
+
+<script>
+// escrita
+var write = document.getElementById('escrita');
+
+var typewriter = new Typewriter(write, {
+    loop: true
+});
+
+typewriter.typeString('Descubra histórias de animais resgatados.')
+    .pauseFor(2500)
+    .start();
+</script>
 
 </html>
