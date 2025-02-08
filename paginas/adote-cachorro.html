@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Jurema</title>
+
+    <link rel="shortcut icon" href="../../img/global/logopng.ico">
+    <link rel="stylesheet" href="../../css/adote.css">
+    <link rel="stylesheet" href="../../css/menu.css">
+    <script src="../../script/global/menu.js" defer></script>
+    <script src="../../script/global/jquery-3.7.1.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        .bck-img {
+                background: url(../img/img-adote/cachorro_nav.jpeg) no-repeat center;
+                background-size: cover;
+                animation: fadeInBackground 1s ease-in-out forwards;
+            }
+            @keyframes fadeInBackground {
+            0% {
+                opacity: 0.6;
+            }
+            100% {
+                opacity: 1;
+            }
+            }
+    </style>
+</head>
+
+<body>
+    <header class="bck-img">
+        <article class="bck-color">
+    
+            <div class="navbar">
+            <div class="images-nav">
+            <div class="cont-ini">
+                <figure><a href="home.html"><img src="../img/global/logopng.ico" class='logo' alt="Logo do Projeto Jurema"></a>
+                </figure>
+                <ul class="nav-menu">
+                    <li id="pag">Páginas<span class="formkit--down"></span>
+                        <div id="click-nav_pag">
+                            <ul>
+                                <a href="home.html"><li class="links">Página Inicial</li></a>
+                                <a href="historia.html"><li class="links">Nossa História</li></a>
+                                <a href="lojinha.html"><li class="links">Lojinha</li></a>
+                                <a href="resgates.html"><li class="links">Resgates</li></a>
+                            </ul>
+                        </div>
+                    </li>
+    
+                    <li id="adote">Adote<span class="formkit--down"></span>
+                        <div id="click-nav_adote">
+                            <ul>
+                                <a href="adote-cachorro.html"><li class="links">Cachorros</li></a>
+                                <a href="adote-gato.html"><li class="links">Gatos</li></a>
+                                <a href="adote-cavalo.html"><li class="links">Cavalos</li></a>
+                            </ul>
+                        </div>
+                    </li>
+                    <a href="doe.html"><button class="doe-agora">Doe Agora</button></a>
+                </ul>
+            </div>
+                <div class="mobile close">
+                    <span class="tabler--menu-2" onclick="showMenu()"></span>
+                </div>
+            </div>
+                <div class="nav-menu_mobile close">
+                    <ul class="ul_mobile">
+                        <li id="pag_mobile">
+                            <p>Páginas<span class="formkit--down"></span></p>
+                            <div id="click-nav_pag_mobile">
+                                <ul class="ul_mobile links-lista">
+                                    <a href="home.html"><li class="links-mobile">Página Inicial</li></a>
+                                    <a href="historia.html"><li class="links-mobile">Nossa História</li></a>
+                                    <a href="lojinha.html"><li class="links-mobile">Lojinha</li></a>
+                                    <a href="resgates.html"><li class="links-mobile">Resgates</li></a>
+                                </ul>
+                            </div>
+                        </li>
+                        <li id="adote_mobile">
+                            <p>Adote<span class="formkit--down"></p>
+                            <div id="click-nav_adote_mobile">
+                                <ul class="ul_mobile links-lista">
+                                    <a href="adote-cachorro.html"><li class="links-mobile">Cachorros</li></a>
+                                    <a href="adote-cavalo.html"><li class="links-mobile">Cavalos</li></a>
+                                    <a href="adote-gato.html"><li class="links-mobile">Gatos</li></a>
+                                </ul>
+                            </div>
+                        </li>
+                        <a href="doe.html" class="doe-agora_mobile">Doe Agora</a>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="destaque">
+                <h1>Adote</h1>
+                <div class="filtros">
+                    <a href="adote-cachorro.html"><p class="choice">Cachorros</p></a>
+                    <a href="adote-gato.html"><p>Gatos</p></a>
+                    <a href="adote-cavalo.html"><p>Cavalos</p></a>
+                </div>
+            </div>
+        </article>
+    </header>
+
+    
+<div class="card-container">
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-face card-front">
+                <div class="sexo">
+                    <img src="../img/img-adote/sexo-masculino.png" alt="Masculino">
+                </div>
+                <div class="nome">
+                    <p>Marcos</p>
+                </div>
+                <img src="../img/img-adote/cachorro_card.png" alt="Adote">
+                <div class="linkcard">
+                <a href="adote-cavalo.html"> Adotar</a>
+                </div>
+                <div class="flecha">
+                <img src="../img/img-adote/circulo-de-flecha.png" alt="seta">
+            </div>
+            </div>
+            <div class="card-face card-back">
+                <div class="fundo"></div>
+                <img src="../img/img-adote/cachorro_card.png" alt="Adote">
+                <div class="nome-back">
+                    <img src="../img/img-adote/sexo-masculino.png" alt="Masculino">
+                    <p>Marcos</p>
+                </div>
+
+                <div class="infos">
+                    <p class="info-card">Idade:</p>
+                    <p class="info-card">Raça:</p>
+                    <p class="info-card">Castrado:</p>
+                    <p class="info-card">Vacinado:</p>
+                </div>
+
+                <div class="linkcard-back">
+                    <a href="adote-cavalo.html"> Adotar</a>
+                    </div>
+
+                    <div class="img-flecha">
+                    <img src="../img/img-adote/circulo-de-flecha-esquerda.png" alt="Flecha">
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-face card-front">
+                <div class="sexo">
+                    <img src="../img/img-adote/sexo-masculino.png" alt="Masculino">
+                </div>
+                <div class="nome">
+                    <p>Marcos</p>
+                </div>
+                <img src="../img/img-adote/cachorro_card.png" alt="Adote">
+                <div class="linkcard">
+                <a href="adote-cavalo.html"> Adotar</a>
+                </div>
+                <div class="flecha">
+                <img src="../img/img-adote/circulo-de-flecha.png" alt="seta">
+            </div>
+            </div>
+            <div class="card-face card-back">
+                <div class="fundo"></div>
+                <img src="../img/img-adote/cachorro_card.png" alt="Adote">
+                <div class="nome-back">
+                    <img src="../img/img-adote/sexo-masculino.png" alt="Masculino">
+                    <p>Marcos</p>
+                </div>
+
+                <div class="infos">
+                    <p class="info-card">Idade:</p>
+                    <p class="info-card">Raça:</p>
+                    <p class="info-card">Castrado:</p>
+                    <p class="info-card">Vacinado:</p>
+                </div>
+
+                <div class="linkcard-back">
+                    <a href="adote-cavalo.html"> Adotar</a>
+                    </div>
+
+                    <div class="img-flecha">
+                    <img src="../img/img-adote/circulo-de-flecha-esquerda.png" alt="Flecha">
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-face card-front">
+                <div class="sexo">
+                    <img src="../img/img-adote/sexo-masculino.png" alt="Masculino">
+                </div>
+                <div class="nome">
+                    <p>Marcos</p>
+                </div>
+                <img src="../img/img-adote/cachorro_card.png" alt="Adote">
+                <div class="linkcard">
+                <a href="adote-cavalo.html"> Adotar</a>
+                </div>
+                <div class="flecha">
+                <img src="../img/img-adote/circulo-de-flecha.png" alt="seta">
+            </div>
+            </div>
+            <div class="card-face card-back">
+                <div class="fundo"></div>
+                <img src="../img/img-adote/cachorro_card.png" alt="Adote">
+                <div class="nome-back">
+                    <img src="../img/img-adote/sexo-masculino.png" alt="Masculino">
+                    <p>Marcos</p>
+                </div>
+
+                <div class="infos">
+                    <p class="info-card">Idade:</p>
+                    <p class="info-card">Raça:</p>
+                    <p class="info-card">Castrado:</p>
+                    <p class="info-card">Vacinado:</p>
+                </div>
+
+                <div class="linkcard-back">
+                    <a href="adote-cavalo.html"> Adotar</a>
+                    </div>
+
+                    <div class="img-flecha">
+                    <img src="../img/img-adote/circulo-de-flecha-esquerda.png" alt="Flecha">
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-face card-front">
+                <div class="sexo">
+                    <img src="../img/img-adote/sexo-masculino.png" alt="Masculino">
+                </div>
+                <div class="nome">
+                    <p>Marcos</p>
+                </div>
+                <img src="../img/img-adote/cachorro_card.png" alt="Adote">
+                <div class="linkcard">
+                <a href="adote-cavalo.html"> Adotar</a>
+                </div>
+                <div class="flecha">
+                <img src="../img/img-adote/circulo-de-flecha.png" alt="seta">
+            </div>
+            </div>
+            <div class="card-face card-back">
+                <div class="fundo"></div>
+                <img src="../img/img-adote/cachorro_card.png" alt="Adote">
+                <div class="nome-back">
+                    <img src="../img/img-adote/sexo-masculino.png" alt="Masculino">
+                    <p>Marcos</p>
+                </div>
+
+                <div class="infos">
+                    <p class="info-card">Idade:</p>
+                    <p class="info-card">Raça:</p>
+                    <p class="info-card">Castrado:</p>
+                    <p class="info-card">Vacinado:</p>
+                </div>
+
+                <div class="linkcard-back">
+                    <a href="adote-cavalo.html"> Adotar</a>
+                    </div>
+
+                    <div class="img-flecha">
+                    <img src="../img/img-adote/circulo-de-flecha-esquerda.png" alt="Flecha">
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-face card-front">
+                <div class="sexo">
+                    <img src="../img/img-adote/sexo-masculino.png" alt="Masculino">
+                </div>
+                <div class="nome">
+                    <p>Marcos</p>
+                </div>
+                <img src="../img/img-adote/cachorro_card.png" alt="Adote">
+                <div class="linkcard">
+                <a href="adote-cavalo.html"> Adotar</a>
+                </div>
+                <div class="flecha">
+                <img src="../img/img-adote/circulo-de-flecha.png" alt="seta">
+            </div>
+            </div>
+            <div class="card-face card-back">
+                <div class="fundo"></div>
+                <img src="../img/img-adote/cachorro_card.png" alt="Adote">
+                <div class="nome-back">
+                    <img src="../img/img-adote/sexo-masculino.png" alt="Masculino">
+                    <p>Marcos</p>
+                </div>
+
+                <div class="infos">
+                    <p class="info-card">Idade:</p>
+                    <p class="info-card">Raça:</p>
+                    <p class="info-card">Castrado:</p>
+                    <p class="info-card">Vacinado:</p>
+                </div>
+
+                <div class="linkcard-back">
+                    <a href="adote-cavalo.html"> Adotar</a>
+                    </div>
+
+                    <div class="img-flecha">
+                    <img src="../img/img-adote/circulo-de-flecha-esquerda.png" alt="Flecha">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+<footer>
+    <div class="conteiner">
+        <div class="cont1">
+            <div class="redes">
+                <figure><img src="../img/global/logonav.png" alt="Logo do Projeto Jurema"></figure>
+
+                <div class="cont1-links">
+                    <a href="https://www.instagram.com/projeto_jurema/"><span
+                            class="mdi--instagram"></span>@projeto_jurema</a>
+                    <a href="mailto:admprojetojurema@gmail.com"><span
+                            class="material-symbols--mail-outline"></span>admprojetojurema@gmail.com</a>
+                </div>
+
+            </div>
+
+            <p class="redes_endereco">
+                Av. Vereador José Bordin 96 - Vila Braga
+                <br>Aguaí - SP
+                <br>CEP 13860-352
+                <br>CNPJ 50.190.373/0001-40
+            </p>
+        </div>
+
+        <div class="cont2">
+            <ul class="cont2-lista">
+                <h1 class="titulo">Páginas</h1>
+                <li class="link-rdp"><a href="home.html">Home</a></li>
+                <li class="link-rdp"><a href="historia.html">Nossa História</a></li>
+                <li class="link-rdp
+            link-rdp"><a href="lojinha.html">Lojinha</a></li>
+
+            </ul>
+            <ul class="cont2-lista">
+                <h1 class="titulo">Como Ajudar</h1>
+                <li class="link-rdp"><a href="doe.html">Doação</a></li>
+                <li class="link-rdp"><a href="adote/adote-cachorro.html">Adote</a></li>
+                <li class="link-rdp
+            link-rdp"><a href="voluntarios.html">Seja Voluntário</a></li>
+            </ul>
+        </div>
+    </div>
+    <p class="direitos">© 2024 Projeto Jurema. Todos os direitos reservados.</p>
+</footer>
+</body>
+
+<script>
+    document.querySelectorAll('.card').forEach((card) => {
+        card.addEventListener('click', function () {
+            this.classList.toggle('flip');
+        });
+    });
+</script>
+
+</html>
