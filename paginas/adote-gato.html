@@ -370,10 +370,20 @@
 
 <script>
     document.querySelectorAll('.card').forEach((card) => {
-        card.addEventListener('click', function () {
-            this.classList.toggle('flip');
-        });
+    card.addEventListener('click', function () {
+        var front = this.querySelector('.card-front');
+        var back = this.querySelector('.card-back');
+
+        if(front.classList.contains('none')){
+            back.classList.add('none');
+            front.classList.remove('none');
+        }else{
+        front.classList.add('none');
+        back.classList.remove('none');
+        }
+        this.classList.toggle('flip');
     });
+});
 </script>
 
 </html>
