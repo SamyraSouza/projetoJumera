@@ -7,8 +7,8 @@
     <title>Projeto Jurema</title>
 
     <link rel="shortcut icon" href="../img/global/logopng.ico">
-    <link rel="stylesheet" href="../css/adote.css">
     <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/adote.css">
     <script src="../script/global/menu.js" defer></script>
     <script src="../script/global/jquery-3.7.1.min.js"></script>
 
@@ -47,7 +47,7 @@
                         <div id="click-nav_pag">
                             <ul>
                                 <a href="home.html"><li class="links">Página Inicial</li></a>
-                                <a href="historia.html"><li class="links">Nossa História</li></a>
+                                <!-- <a href="historia.html"><li class="links">Nossa História</li></a> -->
                                 <a href="lojinha.html"><li class="links">Lojinha</li></a>
                                 <a href="resgates.html"><li class="links">Resgates</li></a>
                             </ul>
@@ -77,7 +77,7 @@
                             <div id="click-nav_pag_mobile">
                                 <ul class="ul_mobile links-lista">
                                     <a href="home.html"><li class="links-mobile">Página Inicial</li></a>
-                                    <a href="historia.html"><li class="links-mobile">Nossa História</li></a>
+                                    <!-- <a href="historia.html"><li class="links-mobile">Nossa História</li></a> -->
                                     <a href="lojinha.html"><li class="links-mobile">Lojinha</li></a>
                                     <a href="resgates.html"><li class="links-mobile">Resgates</li></a>
                                 </ul>
@@ -385,6 +385,10 @@
         this.classList.toggle('flip');
     });
 });
+
+function showMenu(){
+        $(".destaque").toggle('none');
+}
 </script>
 
 </html>
