@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Jurema - Página Inicial</title>
+
+    <link rel="shortcut icon" href="../img/global/logopng.ico">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <script src="../script/global/menu.js" defer></script>
+    <script src="../script/global/jquery-3.7.1.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="bck-img">
+    <article class="bck-color">
+
+        <div class="navbar">
+        <div class="images-nav">
+        <div class="cont-ini">
+            <figure><a href="home.html"><img src="../img/global/logopng.ico" class='logo' alt="Logo do Projeto Jurema"></a>
+            </figure>
+            <ul class="nav-menu">
+                <li id="pag">Páginas<span class="formkit--down"></span>
+                    <div id="click-nav_pag">
+                        <ul>
+                            <a href="home.html"><li class="links">Página Inicial</li></a>
+                            <!-- <a href="historia.html"><li class="links">Nossa História</li></a> -->
+                            <a href="lojinha.html"><li class="links">Lojinha</li></a>
+                            <a href="resgates.html"><li class="links">Resgates</li></a>
+                        </ul>
+                    </div>
+                </li>
+
+                <li id="adote">Adote<span class="formkit--down"></span>
+                    <div id="click-nav_adote">
+                        <ul>
+                            <a href="adote-cachorro.html"><li class="links">Cachorros</li></a>
+                            <a href="adote-gato.html"><li class="links">Gatos</li></a>
+                            <a href="adote-cavalo.html"><li class="links">Cavalos</li></a>
+                        </ul>
+                    </div>
+                </li>
+                <a href="doe.html"><button class="doe-agora">Doe Agora</button></a>
+            </ul>
+        </div>
+            <div class="mobile close">
+                <span class="tabler--menu-2" onclick="showMenu()"></span>
+            </div>
+        </div>
+            <div class="nav-menu_mobile close">
+                <ul class="ul_mobile">
+                    <li id="pag_mobile">
+                        <p>Páginas<span class="formkit--down"></span></p>
+                        <div id="click-nav_pag_mobile">
+                            <ul class="ul_mobile links-lista">
+                                <a href="home.html"><li class="links-mobile">Página Inicial</li></a>
+                                <!-- <a href="historia.html"><li class="links-mobile">Nossa História</li></a> -->
+                                <a href="lojinha.html"><li class="links-mobile">Lojinha</li></a>
+                                <a href="resgates.html"><li class="links-mobile">Resgates</li></a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="adote_mobile">
+                        <p>Adote<span class="formkit--down"></p>
+                        <div id="click-nav_adote_mobile">
+                            <ul class="ul_mobile links-lista">
+                                <a href="adote-cachorro.html"><li class="links-mobile">Cachorros</li></a>
+                                <a href="adote-cavalo.html"><li class="links-mobile">Cavalos</li></a>
+                                <a href="adote-gato.html"><li class="links-mobile">Gatos</li></a>
+                            </ul>
+                        </div>
+                    </li>
+                    <a href="doe.html" class="doe-agora_mobile">Doe Agora</a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="destaque">
+            <h1>Projeto Jurema</h1>
+            <p id="escrita"></p>
+        </div>
+    </article>
+</header>
+
+    <section class="contents">
+
+        <div class="links_cards">
+            <div class="circulo">
+            <img src="../img/img-home/pomba.png" alt="Pomba">
+            </div>
+            <h1>Faça uma Doação</h1>
+            <p class="frase_motivacional">
+                Faça a diferença na vida de quem precisa.
+            </p>
+            <button class="saiba_mais">Saiba Mais</button>
+        </div>
+
+        <div class="links_cards">
+            <div class="circulo">
+                <img src="../img/img-home/comida.png" alt="Pomba">
+                </div>
+            <h1>Compre e Ajude</h1>
+            <p class="frase_motivacional">
+                Cada compra apoia nossa missão.
+            </p>
+            <button class="saiba_mais">Saiba Mais</button>
+        </div>
+
+        <div class="links_cards">
+            <div class="circulo">
+                <img src="../img/img-home/pata.png" alt="Pomba">
+                </div>
+            <h1>Adote</h1>
+            <p class="frase_motivacional">
+                Ganhe um companherio para a vida toda.
+            </p>
+            <button class="saiba_mais">Saiba Mais</button>
+        </div>
+    </section>
+
+    <section class="ajude">
+        <h1>Ajude com sua doação</h1>
+        <p>Uma forma em que voçê pode fazer a diferença na vida de um animalzinho.
+        </p>
+
+        <article class="contGC">
+            <div class="gatoecachorro">
+                <img src="../img/img-home/animaisdomesticos.png" alt="gatoecachorro">
+            </div>
+        </article>
+    </section>
+
+    
+<section id="voluntarios">
+    <h1>Voluntários</h1>
+    <div class="carrossel">
+      <div class="carousel-container">
+        <div class="carousel-item">
+          <img src="../img/img-home/cinza.jpg" alt="Voluntário 1" />
+          <p>Nome 1</p>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/img-home/cinza.jpg" alt="Voluntário 2" />
+          <p>Nome 2</p>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/img-home/cinza.jpg" alt="Voluntário 3" />
+          <p>Nome 3</p>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/img-home/cinza.jpg" alt="Voluntário 4" />
+          <p>Nome 4</p>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/img-home/cinza.jpg" alt="Voluntário 5" />
+          <p>Nome 5</p>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/img-home/cinza.jpg" alt="Voluntário 6" />
+          <p>Nome 6</p>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/img-home/cinza.jpg" alt="Voluntário 7" />
+          <p>Nome 7</p>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/img-home/cinza.jpg" alt="Voluntário 8" />
+          <p>Nome 8</p>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/img-home/cinza.jpg" alt="Voluntário 9" />
+          <p>Nome 9</p>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/img-home/cinza.jpg" alt="Voluntário 10" />
+          <p>Nome 10</p>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/img-home/cinza.jpg" alt="Voluntário 11" />
+          <p>Nome 11</p>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/img-home/cinza.jpg" alt="Voluntário 12" />
+          <p>Nome 12</p>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/img-home/cinza.jpg" alt="Voluntário 13" />
+          <p>Nome 13</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="seja_voluntario">
+        <div class="card_voluntario">
+        <div class="tit">
+        <img src="../img/img-home/coracao_pata.png" alt="Coração com pata">
+        <h1>Seja Voluntário</h1>
+        </div>
+        <p>Junte-se a nós para fazer a diferença na vida dos animais - Seja voluntário em nossa ONG e ajude a criar um mundo onde cada criatura tenha amor, cuidado e proteção.</p>
+        <h2>Clique no botão abaixo e se inscreva</h2>
+        <div class="voluntario">
+            <p>Quero ser Voluntário</p>
+        </div>
+        </div>
+    </section>
+
+    <section class="equipe">
+      <h1>Equipe de Desenvolvimento</h1>
+      <div class="equipe-container">
+          <div class="membro">
+              <div class="imagem">
+                  <img src="../img/img-home/cinza.jpg" alt="Membro 1">
+              </div>
+              <div class="nome">Nome 1</div>
+              <div class="links">
+                  <a href="https://www.linkedin.com/in/membro1" target="_blank" class="linkedin">LinkedIn</a>
+                  <a href="https://github.com/membro1" target="_blank" class="github">GitHub</a>
+              </div>
+          </div>
+  
+          <div class="membro">
+              <div class="imagem">
+                  <img src="../img/img-home/cinza.jpg" alt="Membro 2">
+              </div>
+              <div class="nome">Nome 2</div>
+              <div class="links">
+                  <a href="https://www.linkedin.com/in/membro2" target="_blank" class="linkedin">LinkedIn</a>
+                  <a href="https://github.com/membro2" target="_blank" class="github">GitHub</a>
+              </div>
+          </div>
+  
+          <div class="membro">
+              <div class="imagem">
+                  <img src="../img/img-home/cinza.jpg" alt="Membro 3">
+              </div>
+              <div class="nome">Nome 3</div>
+              <div class="links">
+                  <a href="https://www.linkedin.com/in/membro3" target="_blank" class="linkedin">LinkedIn</a>
+                  <a href="https://github.com/membro3" target="_blank" class="github">GitHub</a>
+              </div>
+          </div>
+  
+          <div class="membro">
+              <div class="imagem">
+                  <img src="../img/img-home/cinza.jpg" alt="Membro 4">
+              </div>
+              <div class="nome">Nome 4</div>
+              <div class="links">
+                  <a href="https://www.linkedin.com/in/membro4" target="_blank" class="linkedin">LinkedIn</a>
+                  <a href="https://github.com/membro4" target="_blank" class="github">GitHub</a>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+
+        <footer>
+        <div class="conteiner">
+            <div class="cont1">
+                <div class="redes">
+                    <figure><img src="../img/global/logonav.png" alt="Logo do Projeto Jurema"></figure>
+
+                    <div class="redes-links">
+                        <a href="https://www.instagram.com/projeto_jurema/"><span
+                                class="mdi--instagram"></span>@projeto_jurema</a>
+                        <a href="mailto:admprojetojurema@gmail.com"><span
+                                class="material-symbols--mail-outline"></span>admprojetojurema@gmail.com</a>
+                    </div>
+
+                </div>
+
+                <p class="redes-endereco">
+                    Av. Vereador José Bordin 96 - Vila Braga
+                    <br>Aguaí - SP
+                    <br>CEP 13860-352
+                    <br>CNPJ 50.190.373/0001-40
+                </p>
+            </div>
+
+            <div class="cont2">
+                <ul class="cont2-lista">
+                    <h1 class="titulo">Páginas</h1>
+                    <li class="link-rdp"><a href="home.html">Home</a></li>
+                    <li class="link-rdp"><a href="historia.html">Nossa História</a></li>
+                    <li class="link-rdp"><a href="lojinha.html">Lojinha</a></li>
+
+                </ul>
+                <ul class="cont2-lista">
+                    <h1 class="titulo">Como Ajudar</h1>
+                    <li class="link-rdp"><a href="doe.html">Doação</a></li>
+                    <li class="link-rdp"><a href="adote/adote-cachorro.html">Adote</a></li>
+                    <li class="link-rdp
+                link-rdp"><a href="voluntarios.html">Seja Voluntário</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="direitos">© 2024 Projeto Jurema. Todos os direitos reservados.</p>
+    </footer>
+  
+  <script src="../script/global/home.js"></script>
+  <script src="https://safi.me.uk/typewriterjs/js/typewriter.js"></script>
+</body>
+
+<script>
+// escrita
+var write = document.getElementById('escrita');
+
+var typewriter = new Typewriter(write, {
+    loop: true
+});
+
+typewriter.typeString('Onde toda vida vale a pena!')
+    .pauseFor(2500)
+    .start();
+</script>
+
+</html>
